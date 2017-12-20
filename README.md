@@ -26,3 +26,11 @@ platform = atmelavr
 board = nanoatmega328
 framework = arduino
 ```
+
+## Audio Encoding
+
+The audio clip within the `/audio` directory is used in `main.h`. This byte stream cannot exceed the Program Memory size of the microcontroller you have chosen to use.
+
+The tutorial on setting up the audio clip for encoding can be founds here: [http://highlowtech.org/?p=1963](http://highlowtech.org/?p=1963). It's important to note that you need a WAV/MP3 with a `sample rate of 8Khz` and a `bit rate of 16Khz`.
+
+There's a copy of the `EncodeAudio.exe` binary in the `/audio` directory also incase the site mirror goes down.
